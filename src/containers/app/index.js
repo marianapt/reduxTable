@@ -1,15 +1,14 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
 import Table from '../table';
 
 const App = () => (
   <div>
     <header>
-      <Link to="/">Home</Link>
+      <h1>Sortable React/Redux Table</h1>
     </header>
 
     <main>
-      <Route exact path="/" component={Table} />
+      <Table />
     </main>
   </div>
 );
